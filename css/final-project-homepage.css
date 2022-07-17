@@ -6,21 +6,46 @@ body {
 
 .body-section {
     text-align: left;
-    padding: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
     background-image: linear-gradient(to right,#2e3139,#0c0c0e);
+    font-size: 1.25em;
 }
 
-.body-section h1, h4 {
+.body-section h1 {
     color: #d2d2d4;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 .body-section h2 {
     color: #a3a3a4;
+    line-height: 45px;
+    letter-spacing: 1px;
+}
+
+.body-section h4 {
+    margin: 5px;
+}
+
+.links-wrapper > .nav-link {
+    width: 70px;
+    text-align: center;
+}
+
+.body-section > .left-column {
+    padding-right: 40px;
 }
 
 .body-section > .left-column > .top-writing a {
     color: #d2d2d4;
     text-decoration: none;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+}
+
+span {
     font-weight: 900;
 }
 
@@ -29,15 +54,14 @@ body {
     text-decoration: none;
 }
 
-.body-section > .codepen-for a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.25em;
-    padding: 25px;
+.body-section {
+    padding-bottom: 0px;
 }
 
-.codepen-for {
-    height: 200px;
+/* Columns Styles */
+
+.features-section > .columns-wrapper > .column {
+    height: 50px;
     background-color: #36383f;
     border-top: 10px solid white;
     border: 2px solid #636364;
@@ -47,13 +71,36 @@ body {
     align-items: center;
 }
 
-.features-section > .columns-wrapper > .column {
-    padding: 20px;
-    margin: 0px;
-    text-align: center;
-    border-bottom: 5px solid transparent;
-    border-radius: 10px;
-    transition: 1s;
-    align-items: center;
-    justify-content: center;
+.column a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.column {
+    background-color: #36383f;
+}
+
+.columns-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.features-section > .columns-wrapper > .column > .dingus span {
+    font-family: 'Oswald', sans-serif;
+}
+
+.body-section > .right-column > .image-and-text {
+    color: white;
+}
+
+/* Image Styles */
+.body-section > .right-column > .image-and-text img {
+    width: 90%;
+    height: 90%;
+}
+
+/* Grid styles */
+.body-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr
 }
